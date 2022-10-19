@@ -9,35 +9,43 @@
 </head>
 
 <body>
-    <header>
-        <h1>Lorem ipsum</h1>
-        <nav>
-            <ul>
-                <li><a herf="#">Link 1</a></li>
-                <li><a herf="#">Link 2</a></li>
-                <li><a herf="#">Link 3</a></li>
-            </ul>
-        </nav>
+    <header class="nav">
+        <div class="navbar">
+            <h1 class="barand-title">Lorem ipsum</h1>
+            <nav class="navbar-links">
+                <ul>
+                    <li><a herf="#">Link 1</a></li>
+                    <li><a herf="#">Link 2</a></li>
+                    <li><a herf="#">Link 3</a></li>
+                </ul>
+            </nav>
+        </div>
 
-        <a href="index.html">Index</a>
+        <div class="nav-right">
+            <a href="index.html">Index</a>
+        </div>
     </header>
-    <main>
-        <h2>User login</h2>
-        <form action="" method="post">
+    <main class="start">
+        <fieldset class="section">
+            <legend>
+                <h2 class="cap">User login</h2>
+            </legend>
+            <form method="post" class="form">
+                <div class="label">
+                    <label for="username">Username:</label>
+                    <input type="text" name="">
+                </div>
+                <div class="label">
+                    <label for="password">Password:</label>
+                    <input type="password" name="">
+                </div>
+                <div>
+                    <input type="reset" class="gra" />
+                    <input value="submit" type="button" class="gr" />
 
-            <label for="username">Username
-                <input type="text" name="">
-            </label>
-
-            <label for="password">Password
-                <input type="password" name="">
-            </label>
-
-            <label>
-                <input type="reset">
-                <input type="submit">
-            </label>
-        </form>
+                </div>
+            </form>
+        </fieldset>
     </main>
     <footer>
         <span>&copy; Anders Lann</span>
